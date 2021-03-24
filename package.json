@@ -1,0 +1,23 @@
+{
+  "name": "basic-quote-body-image-background",
+  "version": "1.0.0",
+  "description": "Setting A backgound image on the body element as a background for a quote",
+  "main": "index.js",
+  "scripts": {
+    "slides": "npx reveal-md basic-quote-body-image-background.md",
+	"customcss": "npx reveal-md basic-quote-body-image-background.md -w --css custom.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/basic--quote-body-image-background.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/basic--quote-body-image-background/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/basic--quote-body-image-background#readme",
+  "devDependencies": {
+    "reveal-md": "^5.0.0"
+  }
+}

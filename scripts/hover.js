@@ -12,15 +12,15 @@ const quotes = [
     `I have not failed. I've just found 10,000 ways that won't work. - Thomas Alba Edison`
 ]
 
-const blockQuote = document.querySelector('blockquote')
-const articleHeading = document.querySelector('h2')
 const quoteContainer = document.querySelector('.quote-container')
+const articleHeading = document.querySelector('h2')
 
 articleHeading.style.fontWeight = `normal`
 
 /* randomize the index retrieval of the quotes array so that each time the user
 clicks on the text rendered to the page, a random quote appears.*/
 quoteContainer.addEventListener('click', () => {
+	const blockQuote = document.querySelector('blockquote')
 	const randomIndex = Math.floor(Math.random() * quotes.length);
 	articleHeading.innerHTML = ``
 	blockQuote.textContent = quotes[randomIndex]

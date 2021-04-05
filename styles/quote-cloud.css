@@ -239,7 +239,11 @@ blockquote {
 
 /* media query for the Microsoft Lumia 550 with the width of 640px
 and the height of 360px */
-@media (max-width: 640px) and (max-height: 360px) {
+@media (width: 640px) and (height: 360px) {
+	
+	.quote-container {
+		height: 20vh;
+	}
     h2, blockquote {
         font-size: 1.5em;
 	}

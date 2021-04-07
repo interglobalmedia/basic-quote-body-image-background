@@ -36,30 +36,18 @@ body {
 /* nav styles using Flexbox (screens greater than 899px) */
 /* Logo Styling */
 
-.about-header {
+.header {
 	background: rgba(68,0,108, 0.5);
 }
 
-.about-header .logo {
-	padding-top: 0.25rem;
-}
-
-.logo {
-	height: 97.5%;
-	max-height: 200px;
-	max-width: 150px;
-	position: relative;
-    text-align: center;
-    text-decoration: none;
-	top: 0.75rem;
-	width: 97.5%;
-}
-
+/* I changed .logo class to .brand class */
 .brand {
+	display: flex;
+	font-size: 2.25rem;
+	font-weight: bold;
 	height: auto;
-	margin-top: 0.25rem;
-	max-width: 7.9688rem;
-	width: 97.5%;
+	width: 100%;
+	width: 7.8125rem;
 }
 
 /* End Header Logo Styling */
@@ -110,12 +98,14 @@ a:hover {
 /* media query for site navigation for screens smaller than 900px */
 @media (max-width: 899px) {
 
+	/* I changed .logo class to .brand class */
 	.brand {
+		color: #b4a8d9;
+		display: flex;
 		height: auto;
-		margin-top: -0.25rem;
 		margin-left: 0.5rem;
-		max-width: 7.9688rem;
 		width: 100%;
+		width: 7.8125rem;
 	}
 
     li {
@@ -212,13 +202,19 @@ main h1 {
 	text-align: center;
 }
 
+h1 {
+	font-size: 3em;
+}
+
 h2 {
-	font-size: 2.5em;
-	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
+	font-size: 2.25em;
 }
 
 blockquote {
-	font-size: 1.5em;
+	font-size: 1.75em;
+}
+
+h2, blockquote {
 	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.7);
 }
 
@@ -240,7 +236,7 @@ blockquote {
 /* media query for the Microsoft Lumia 550 with the width of 640px
 and the height of 360px */
 @media (width: 640px) and (height: 360px) {
-	
+
 	.quote-container {
 		height: 20vh;
 	}
